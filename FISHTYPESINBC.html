@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <title>Nicks Website</title>
+                        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+                        
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                  
+        </head>
+        <header id="header">
+                <nav class="links" style="--items: 5;">
+                 
+                        <a href="index.html">Homepage</a>
+                        <a href="FISHTYPESINBC.html">BC Fly Fishing</a>
+                        <a href="FLYS.html">Flytying</a>
+                        <a href="GEAR.html">Gear</a>
+                        <a href="ABOUTMEANDRESOURCES.html">About Me</a>
+                        <span class="line"></span>
+                </nav>
+
+
+
+        </header>
+<style>
+  .homepage {
+    /* The image used */
+    background-image: url("BCFishing.jpg");
+  
+    /* Set a specific height */
+    min-height: 900px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: rgb(3, 93, 183);
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
+	color: #eee;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+.content ul {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9001;
+}
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+/* Appearance */
+.links {
+	background-color: rgb(83, 128, 173);
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > a {
+	color: #f5e29c;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: rgb(184, 166, 104);
+}
+.links > .line {
+	background: rgba(255, 249, 184, 0.687);
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+
+
+
+
+.sentence {
+	color: rgb(255, 230, 150);
+}
+
+</style>
+
+
+<head>
+
+      
+</head>
+
+
+
+
+<body>
+                <div class="homepage"></div>
+
+                <div style="height:800px;background-color: #0003 ;font-size:36px">
+        <p class="sentence">
+			Fishing is a large part of British Columbia's global trade and we have an unbandant history of it. This is due to British Columbias rich ratio of water to land of our province, making fish and bodies of water abundant. Canada have many amazing native fish species, such as trout and salmon. These fish include but	are	not limited to cutthroat trout, rainbow trout, bulltrout	sockeye salmon, pink salmon, chinook salmon, chum salmon, and many more.
+        </p>
+		<div style="display: flex; justify-content: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/gaO-82H1t7c?si=pXUnuzvHs4yp6ksk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+		</div>
+		<p class="text2">
+		Fly fishing in British Columbia is an experience that draws anglers from around the world, offering some of the most pristine and diverse fishing environments on the planet.
+		 With its vast network of rivers, lakes, and coastal waters, BC is home to a wide array of fish species, including salmon, steelhead, trout, and char.
+		 The province’s varied landscapes—from rugged mountain streams to the serene waters of the Pacific Coast—provide an unmatched backdrop for fly fishing.
+		  The iconic rivers like the Skeena, Bulkley, and Thompson offer world-class opportunities for those seeking adventure in both freshwater and saltwater fishing.
+			The beauty of fly fishing in British Columbia isn’t just in the abundant fish; it’s in the solitude and connection with nature.
+	 Whether you’re casting a line from a quiet, remote lake in the Cariboo or drifting along the coast for a shot at Chinook salmon, there’s an undeniable magic to the experience.
+		 BC’s commitment to conservation also ensures that these pristine environments will be enjoyed for generations to come.
+		The local community of fly fishermen, combined with experienced guides, further elevates the experience, sharing the knowledge and skills required to navigate the diverse waters of the province.
+		 For both seasoned anglers and newcomers, British Columbia offers an unforgettable fly fishing adventure.
+		</p>
+		<style>
+			.text2 {
+				height: 750px;
+
+			}
+		</style>
+									<div class="hoverbox">
+										<style>
+											.hoverbox {
+												z-index: 11;
+											}
+											.container {
+											  position: relative;
+											  width: 450px;
+											}
+											
+											.image {
+											  display: block;
+											  width: 450px;
+											  height: 450px;
+											}
+											
+											.overlay {
+											  position: absolute;
+											  bottom: 0;
+											  left: 0;
+											  right: 0;
+											  background-color: #8dcee3;
+											  overflow: hidden;
+											  width: 100%;
+											  height: 0;
+											  transition: .5s ease;
+											}
+											
+											.container:hover .overlay {
+											  height: 450px;
+											}
+											
+											.text {
+											  color: white;
+											  font-size: 20px;
+											  position: absolute;
+											  top: 50%;
+											  left: 50%;
+											  -webkit-transform: translate(-50%, -50%);
+											  -ms-transform: translate(-50%, -50%);
+											  transform: translate(-50%, -50%);
+											  text-align: center;
+											}
+											</style>
+											</head>
+											<body>
+											<div class="container">
+											  <img src="5.jpg" class="image">
+											  <div class="overlay">
+												<div class="text">Fun Fact: British Columbia is home to the world’s largest population of wild Pacific salmon, including five species: Chinook, Coho, Sockeye, Pink, and Chum</div>
+											</div>
+										</div>
+									  </div>
+									  <style>
+										  div.gallery {
+											margin: 5px;
+											border: 1px solid #ccc;
+											float: center;
+											width: 180px;
+										  }
+										  
+										  div.gallery:hover {
+											border: 1px solid #777;
+										  }
+										  
+										  div.gallery img {
+											width: 100%;
+											height: auto;
+										  }
+										  
+										  div.desc {
+											padding: 15px;
+											text-align: center;
+										  }
+										  </style>
+										  </head>
+										  <body>
+										  
+										  <div class="gallery">
+											<a target="_blank" href="https://flyfishers.ca/club-history/">
+											  <img src="1.jpg" alt="Cinque Terre" width=600 height="600">
+											</a>
+											<div class="desc">Some History</div>
+										  </div>
+								
+										  <div class="gallery">
+											<a target="_blank" href="https://www.blueridgeoutdoors.com/fly-fishing/fly-females-meet-six-women-revolutionizing-the-sport/">
+											  <img src="3.jpg" alt="Northern Lights" width=600 height="600">
+											</a>
+											<div class="desc">Inspiring Women</div>
+										  </div>
+										  
+										  <div class="gallery">
+											<a target="_blank" href="https://enroute.aircanada.com/en/sports-and-entertainment/fly-fishing-bc/">
+											  <img src="4.jpg" alt="Mountains" width="600" height="600">
+											</a>
+											<div class="desc">Fly Spots in BC</div>
+										  </div>
+								
+												</div>
+								
+								
+                </div>
+
+</body>
+
+    </html>
+ 

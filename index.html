@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <title>Nicks Website</title>
+                        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+                        
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                  
+        </head>
+        <header id="header">
+                <nav class="links" style="--items: 5;">
+                 
+                        <a href="index.html">Homepage</a>
+                        <a href="FISHTYPESINBC.html">BC Fly Fishing</a>
+                        <a href="FLYS.html">Flytying</a>
+                        <a href="GEAR.html">Gear</a>
+                        <a href="ABOUTMEANDRESOURCES.html">About Me</a>
+                        <span class="line"></span>
+                </nav>
+
+
+
+        </header>
+<style>
+  .homepage {
+    /* The image used */
+    background-image: url("FlyFishing\ INTRO.jpg");
+  
+    /* Set a specific height */
+    min-height: 900px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: #345;
+	background-image: linear-gradient(to bottom, #0009, transparent);
+	color: #eee;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+.content ul {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9001;
+}
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+/* Appearance */
+.links {
+	background-color: #123;
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > a {
+	color: rgb(112, 245, 154);
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: rgb(64, 177, 99);
+}
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+
+
+
+
+.sentence {
+	color: rgb(112, 245, 154);
+}
+
+.scroll {
+	position: sticky;
+	color: black;
+	font-style:italic;
+	font-size: 23px;
+	margin-top: 60px;
+	background-color: rgb(255, 255, 255);
+}
+	
+  
+  
+</style>
+
+<head>
+  <div class="scroll">
+        <marquee width="100%" direction="right" height="29px">
+                <p>
+                        <b>
+                            Fly Fishing Rocks!
+                        </b>
+                </p>
+        </marquee>
+</div>
+
+      
+</head>
+
+
+
+
+<body>
+	<div class="homepage"></div>
+
+	<div style="height:800px;background-color: #0003 ;font-size:36px">
+<p class="sentence">
+	Fly fishing is a unique and artful method of angling that focuses on using lightweight, artificial flies to catch fish.
+	 Unlike traditional fishing, where heavier bait is cast with a weighted line, fly fishing relies on a delicate balance of technique, skill, and knowledge of fish behavior.
+	 Anglers cast a specially designed fly rod, using the weight of the fly line to propel the fly through the air, mimicking the movement of natural prey like insects or small fish.
+	 Fly fishing is often associated with serene, picturesque environments such as rivers, streams, and coastal waters, and is prized for its blend of sport and connection to nature.
+	 Beyond the thrill of the catch, fly fishing offers an opportunity for quiet reflection, with many anglers developing a deep appreciation for the ecosystems they engage with and the natural world around them.
+</p>
+<div style="display: flex; justify-content: center;">
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Gk2ZusF6eJw?si=EQZ7-GrB3M861UNO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<p class="text2">
+	Fly fishing is often considered a blend of skill, art, and tradition.
+	 Its roots trace back to ancient times, but it truly gained prominence in the 19th century, particularly in Europe and the United States, where it evolved into the refined sport it is today.
+	  What sets fly fishing apart from other types of angling is the focus on precision, requiring anglers to cast their flies with accuracy and finesse to mimic the natural feeding behavior of fish.
+	   This method is not just about fishing—it’s about understanding the rhythms of the water, the behavior of fish, and the intricacies of aquatic ecosystems.
+	 Many fly anglers develop a deep respect for conservation, as fly fishing often encourages sustainable practices that minimize ecological impact.
+	In addition to its technical aspects, fly fishing is known for its emphasis on connection and mindfulness. Whether it's casting in the stillness of a mountain stream or chasing saltwater fish along a coastal shoreline,
+	 fly fishing offers a chance for solitude and focus, making it as much about the journey as it is about the catch.
+	 The sport also fosters a strong community, where experienced anglers share tips, stories, and even hand-tied flies.
+	  This sense of camaraderie, combined with the ever-evolving challenge of mastering the techniques and understanding the environment, keeps fly fishing both timeless and ever-exciting.
+</p>
+<style>
+.text2 {
+	height: 750px;
+
+}
+</style>
+				<div class="hoverbox">
+<style>
+.container {
+  position: relative;
+  width: 450px;
+
+
+}
+
+.image {
+  display: block;
+  width: 450px;
+  height: 450px;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1ad69e;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  z-index: 0;
+}
+
+.container:hover .overlay {
+  height: 450px;
+  z-index: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="22.webp" class="image">
+  <div class="overlay">
+	<div class="text"> Fly fishing is known for its peaceful, meditative nature. Many anglers consider it more than just a hobby—it's a way to connect with nature, reduce stress, and enjoy the outdoors in a quiet, mindful way.</div>
+	</div>
+  </div>
+</div>
+<style>
+	div.gallery {
+	  margin: 5px;
+	  border: 1px solid #ccc;
+	  float: center;
+	  width: 180px;
+	}
+	
+	div.gallery:hover {
+	  border: 1px solid #777;
+	}
+	
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	}
+	
+	div.desc {
+	  padding: 15px;
+	  text-align: center;
+	}
+	</style>
+	</head>
+	<body>
+	
+	<div class="gallery">
+	  <a target="_blank" href="https://ca.looptackle.com/canada-fly-fishing-holidays/">
+		<img src="1.jpg"width="600" height="600">
+	  </a>
+	  <div class="desc">Guide to FlyFishing</div>
+	</div>
+	
+	<div class="gallery">
+	  <a target="_blank" href="https://skwalafishing.com/blogs/skwala-lounge/the-eight-greatest-fly-fishing-films-ever-made?srsltid=AfmBOoowJUCYWlG--Lmdp-SBmDHrPf4r8PHP02lx3FseSNKmDPl_DtYM">
+		<img src="2.jpg"width="600" height="600">
+	  </a>
+	  <div class="desc">Outside Media </div>
+	</div>
+	
+	<div class="gallery">
+	  <a target="_blank" href="https://chromersportfishing.com/squamish-fishing-trips/?gad_source=1&gclid=EAIaIQobChMIhZ-t6YjOjAMVyRetBh3nhAwKEAAYAiAAEgJA6PD_BwE">
+		<img src="3.jpg" width="600" height="600">
+	  </a>
+	  <div class="desc">Vancouver Flyfishing Instructors</div>
+	</div>
+	
+	<div class="gallery">
+	  <a target="_blank" href="https://www.youtube.com/@venturesflyco/videos">
+		<img src="4.jpg" width="600" height="600">
+	  </a>
+	  <div class="desc">Youtube Fisherman</div>
+	</div>
+	
+	</div>
+
+
+
+</body>
+
+
+    </html>
+ 

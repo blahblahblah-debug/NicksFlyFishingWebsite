@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <title>Nicks Website</title>
+                        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+                        
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                  
+        </head>
+        <header id="header">
+                <nav class="links" style="--items: 5;">
+                 
+                        <a href="index.html">Homepage</a>
+                        <a href="FISHTYPESINBC.html">BC Fly Fishing</a>
+                        <a href="FLYS.html">Flytying</a>
+                        <a href="GEAR.html">Gear</a>
+                        <a href="ABOUTMEANDRESOURCES.html">About Me</a>
+                        <span class="line"></span>
+                </nav>
+
+
+        </header>
+<style>
+  .homepage {
+    /* The image used */
+    background-image: url("FWC_7763.jpg");
+  
+    /* Set a specific height */
+    min-height: 900px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: rgb(84, 64, 40);
+	background-image: linear-gradient(to bottom, rgb(129, 129, 129), transparent);
+	color: #eee;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	z-index: -10;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+.content ul {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+}
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+/* Appearance */
+.links {
+	background-color: rgb(83, 67, 38);
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > a {
+	color: #ffffff;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: rgb(201, 201, 201);
+}
+.links > .line {
+	background: rgb(201, 201, 201);
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+
+
+
+
+.sentence {
+	color: rgb(255, 255, 255);
+}
+</style>
+
+<head>
+  <div class="scroll">
+
+</div>
+
+      
+</head>
+
+
+
+
+<body>
+                <div class="homepage"></div>
+
+                <div style="height:800px;background-color: rgba(0, 0, 0, 0.2) ;font-size:36px">
+        <p class="sentence">
+			Fly tying is the art of creating artificial flies used in fly fishing, designed to mimic the appearance and movement of natural insects, baitfish, or other food sources that fish feed on.
+			 It involves using materials like feathers, fur, thread, and synthetic fibers to craft intricate, lightweight patterns that float or sink in the water.
+			  Fly tying allows anglers to customize their flies based on the specific conditions they’ll encounter, whether that’s matching the hatch in a local stream or crafting a unique pattern for a particular fish species.
+			 It's both a creative and technical skill that adds a personal touch to the fly fishing experience, often becoming a rewarding hobby in itself.
+        </p>
+		<div style="display: flex; justify-content: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/e_kkrVqmvcg?si=NC25K4ggJ5541D4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		<p class="text2">
+			Fly tying has a rich history that dates back centuries, with its roots traceable to ancient civilizations where anglers used simple materials like feathers and fur to create makeshift lures.
+			 The craft of tying flies for fishing became more refined during the 14th and 15th centuries in Europe, particularly in England, where it was detailed in early fishing manuscripts.
+			  By the 19th century, fly tying had evolved into a distinct and intricate art form, with anglers experimenting with various materials and patterns to closely replicate the local aquatic insects and other prey.
+			   The development of modern fly tying materials, like synthetic fibers and advanced threads, further revolutionized the craft, enabling fly tiers to create incredibly realistic and durable flies.
+			The importance of fly tying in fly fishing goes beyond simply catching fish; it plays a crucial role in maintaining the balance of aquatic ecosystems.
+			 By carefully matching the hatch—creating flies that resemble the specific insects or organisms that fish are feeding on—fly fishers promote sustainable fishing practices.
+			  This encourages anglers to observe and understand the local ecosystem, fostering respect for natural habitats.
+			   Moreover, the art of fly tying allows fishermen to target specific species in an environmentally conscious way, using lighter tackle and selective fishing methods that minimize harm to fish populations.
+			   As such, fly tying contributes not only to the culture of fly fishing but also to the broader conservation efforts that aim to preserve the health and vitality of ecosystems for future generations.
+		</p>
+		<style>
+			.text2 {
+				height: 750px;
+
+			}
+		</style>
+							<div class="hoverbox">
+
+		<style>
+
+			.container {
+			  position: relative;
+			  width: 450px;
+			  z-index: 1;
+			}
+			
+			.image {
+			  display: block;
+			  width: 450px;
+			  height: 450px;
+			
+			}
+			
+			.overlay {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background-color: #db630e;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 0;
+			  transition: .5s ease;
+			  z-index: 2;
+			}
+			
+			.container:hover .overlay {
+			  height: 450px;
+			  
+			}
+			
+			.text {
+			  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+		
+			}
+			</style>
+			</head>
+			<body>
+			<div class="container">
+			  <img src="TyingMaterials.jpg" alt="Avatar" class="image">
+			  <div class="overlay">
+				<div class="text">Did you know?: The first artificial fly for fishing was tied over 2,000 years ago in ancient Greece</div>
+				</div>
+			  </div>
+			</div>
+			<style>
+				div.gallery {
+				  margin: 5px;
+				  border: 1px solid #ccc;
+				  float: center;
+				  width: 180px;
+				}
+				
+				div.gallery:hover {
+				  border: 1px solid #777;
+				}
+				
+				div.gallery img {
+				  width: 100%;
+				  height: auto;
+				}
+				
+				div.desc {
+				  padding: 15px;
+				  text-align: center;
+				}
+				</style>
+				</head>
+				<body>
+				
+				<div class="gallery">
+				  <a target="_blank" href="https://reelflies.ca/Fly_Tying_Materials_and_Threads_s/2676.htm">
+					<img src="TyingGear.webp" alt="Cinque Terre" width="600" height="600">
+				  </a>
+				  <div class="desc">Buy Materials</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="https://www.shor.fishing/shop/category/fly-tying-materials-vises-tools-611">
+					<img src="flyroom.webp" alt="Room" width="600" height="600">
+				  </a>
+				  <div class="desc">Shop Gear</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="https://reelflies.ca/">
+					<img src="tying stuff.jpg" alt="Northern Lights" width="600" height="600">
+				  </a>
+				  <div class="desc">Buy Flys</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="https://cffcm.com/fly-fishing-hall-of-fame?srsltid=AfmBOoolghGBJHT9xI9azpbYvmjjQ2tgqCiGEN1tnjctJzhDXO1zGTLp">
+					<img src="FamousFlyTiyer.jpg" width="600" height="600">
+				  </a>
+				  <div class="desc">Legendary Fly Tyers</div>
+				</div>
+				
+                </div>
+
+
+
+</body>
+
+    </html>
+ 

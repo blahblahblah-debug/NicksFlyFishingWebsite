@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <title>Nicks Website</title>
+                        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+                        
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                  
+        </head>
+        <header id="header">
+                <nav class="links" style="--items: 5;">
+                 
+                        <a href="index.html">Homepage</a>
+                        <a href="FISHTYPESINBC.html">BC Fly Fishing</a>
+                        <a href="FLYS.html">Flytying</a>
+                        <a href="GEAR.html">Gear</a>
+                        <a href="ABOUTMEANDRESOURCES.html">About Me</a>
+                        <span class="line"></span>
+                </nav>
+
+
+        </header>
+        
+<style>
+  .homepage {
+    /* The image used */
+    background-image: url("Fishing\ GEAR.webp");
+  
+    /* Set a specific height */
+    min-height: 900px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: rgb(84, 64, 40);
+	background-image: linear-gradient(to bottom, rgb(129, 129, 129), transparent);
+	color: #eee;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 62.5%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+.content ul {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+#footer {
+	background-color: #246c;
+	background-image: linear-gradient(to bottom, transparent, #0009);
+	border-top: 1px solid #fff3;
+	box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+	overflow: hidden;
+	padding: 8px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9001;
+}
+#footer a {
+	color: #85c6f6;
+	padding: 1em 0;
+	text-decoration: none;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: 300;
+}
+#footer ul li {
+	padding: 0 .5em;
+}
+
+/* Appearance */
+.links {
+	background-color: rgb(83, 67, 38);
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > a {
+	color: #ffffff;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: rgb(201, 201, 201);
+}
+.links > .line {
+	background: rgb(201, 201, 201);
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+
+
+
+
+.sentence {
+	color: rgb(255, 255, 255);
+}
+</style>
+
+<head>
+  <div class="scroll">
+  
+</div>
+
+      
+</head>
+
+
+
+
+<body>
+                <div class="homepage"></div>
+
+                <div style="height:800px;background-color: #0003 ;font-size:36px">
+        <p class="sentence">
+			Gear in fly fishing is crucial because it directly impacts casting accuracy, fish detection, and the overall fishing experience.
+			 A quality fly rod, reel, line, and flies ensure better control, improved casting distance, and more effective presentations of the fly.
+			  Proper gear also enhances the angler’s comfort and efficiency, helping them adapt to different fishing environments and conditions.
+        </p>
+		<div style="display: flex; justify-content: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/8qfV_-cBRNU?si=l3COnjDqyJzRQmUH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		<p class="text2">
+		Fly fishing gear is specifically designed to enhance the experience of casting lightweight flies in pursuit of fish.
+		 The core components include a fly rod, which is typically longer and more flexible than conventional fishing rods, and a fly reel, which helps manage the line during casting and retrieval.
+		  The fly line itself is thicker than traditional fishing lines, with a weighted section that allows for smooth, controlled casting.
+		  Additionally, a variety of flies—artificial lures tied to resemble insects, baitfish, or other prey—are central to the sport.
+		 Other essential gear includes waders, which allow anglers to fish in deeper waters, and tools for fly tying, rod maintenance, and fish handling.
+		 Each piece of gear is carefully chosen based on the fishing environment and the species being targeted, making fly fishing both a precise and rewarding outdoor pursuit.
+		</p>
+		<style>
+			.text2 {
+				height: 750px;
+			}
+		</style>
+		<style>
+			.text2 {
+				height: 750px;
+
+			}
+		</style>
+							<div class="hoverbox">
+		<style>
+			.container {
+			  position: relative;
+			  width: 450px;
+			}
+			
+			.image {
+			  display: block;
+			  width: 450px;
+			  height: 450px;
+			}
+			
+			.overlay {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background-color: #63d165;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 0;
+			  transition: .5s ease;
+			}
+			
+			.container:hover .overlay {
+			  height: 450px;
+			}
+			
+			.text {
+			  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			}
+			</style>
+			</head>
+			<body>
+			<div class="container">
+			  <img src="rods.jpg" class="image">
+			  <div class="overlay">
+		
+				<div class="text">Fun Fact: Fly fishing rods were originally made from bamboo, prized for its flexibility and strength.
+					 While modern rods are often made from graphite or fiberglass, bamboo rods are still cherished by collectors and traditionalists.</div>
+				
+			</div>
+		</div>
+	  </div>
+	  <style>
+		  div.gallery {
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: center;
+			width: 180px;
+		  }
+		  
+		  div.gallery:hover {
+			border: 1px solid #777;
+		  }
+		  
+		  div.gallery img {
+			width: 100%;
+			height: auto;
+		  }
+		  
+		  div.desc {
+			padding: 15px;
+			text-align: center;
+		  }
+		  </style>
+		  </head>
+		  <body>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="https://www.orvis.com/fly-fishing/accessories?srsltid=AfmBOorODb_sbJqVZwkQt47jgrd_hW_coE4kZny5zUmnsV-eTRYguyn8">
+			  <img src="acessories.jpg" width="600" height="600">
+			</a>
+			<div class="desc">Accesories</div>
+		  </div>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="https://www.princecraft.com/ca/en/products/Fishing-Boats.aspx">
+			  <img src="boat.jpg" width="600" height="600">
+			</a>
+			<div class="desc">Boats</div>
+		  </div>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="https://www.patagonia.ca/shop/sport/fly-fishing">
+			  <img src="clothing.avif" width="600" height="600">
+			</a>
+			<div class="desc">Attire</div>
+		  </div>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="https://flymart.ca/category/204/fly-fishing-nets?srsltid=AfmBOoqgPQVb3wfQ_BsEoIgSKNqRWYZ0G0eEvD44HjpmER_l9Xi2Bfb9">
+			  <img src="nets and stuff.jpg" width="600" height="600">
+			</a>
+			<div class="desc">Nets and More</div>
+		  </div>
+
+                </div>
+
+
+
+</body>
+
+    </html>
+ 
